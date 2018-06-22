@@ -1,182 +1,250 @@
 ﻿body {
     margin: 0;
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: repeat(95, 45px);
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(99, 45px);
     max-width: 1350px;
     width: 100%;
 }
 
 .logo {
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 9;
     grid-row: 1;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
     background-color: #474E5D;
 }
 
 .nav {
-    grid-column: 7 / span 8;
+    grid-column: 10 / span 7;
     grid-row: 1;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     background-color: #474E5D;
 }
 
-.santa-anna {
-    grid-column: 1 / span 11;
-    grid-row: 2 / span 8;
+h1 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.amenities h4 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h5 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+p {
+    font-size: .90rem;
+}
+
+.locations p {
+    line-height: 1.1;
+}
+
+.amenities p {
+    text-align: center;
+}
+
+.main-img-1 {
+    grid-column: 1 / span 12;
+    grid-row: 2 / span 9;
     background-size: cover;
     background-image: url('images/tuscany-villas-sant-anna.jpg');
 }
 
-.versilia {
-    grid-column: 12 / span 3;
-    grid-row: 2 / span 8;
+.main-img-2 {
+    grid-column: 13 / span 4;
+    grid-row: 2 / span 9;
     background-size: cover;
     background-image: url('images/Versilia.jpg');
 }
 
-.locations {
-    grid-column: 1 / span 14;
-    grid-row: 10 / span 4;
+.locations-head {
+    grid-column: 1 / span 16;
+    grid-row: 11 / span 4;
+    text-align: center;
     background-color: #474E5D;
 }
 
-.grid-item-6 {
+.l1-text {
     grid-column: 2 / span 7;
-    grid-row: 15 / span 6;
-    background-color: mediumpurple;
+    grid-row: 16 / span 7;
+    color: #474E5D;
 }
 
-.grid-item-7 {
-    grid-column: 9 / span 5;
-    grid-row: 15 / span 6;
-    background-color: rebeccapurple;
+.l1-image {
+    grid-column: 10 / span 6;
+    grid-row: 16 / span 7;
+    background-size: cover;
+    background-image: url('images/italy-mountain-villa.jpeg');
 }
 
-.grid-item-8 {
-    grid-column: 1 / span 14;
-    grid-row: 22 / span 8;
-    background-color: paleturquoise;
+.l2-background {
+    grid-column: 1 / span 16;
+    grid-row: 24 / span 9;
+    background-color: #474E5D;
 }
 
-.grid-item-9 {
-    grid-column: 2 / span 5;
-    grid-row: 23 / span 6;
-    background-color: mediumturquoise;
+.l2-image {
+    grid-column: 2 / span 6;
+    grid-row: 25 / span 7;
+    background-size: cover;
+    background-image: url('images/modern-villa.jpeg');
 }
 
-.grid-item-10 {
-    grid-column: 7 / span 7;
-    grid-row: 23 / span 6;
-    background-color: darkturquoise;
+.l2-text {
+    grid-column: 9 / span 7;
+    grid-row: 25 / span 7;
 }
 
-.grid-item-11 {
+.l3-text {
     grid-column: 2 / span 7;
-    grid-row: 31 / span 6;
-    background-color: greenyellow;
+    grid-row: 34 / span 7;
+    color: #474E5D;
 }
 
-.grid-item-12 {
-    grid-column: 9 / span 5;
-    grid-row: 31 / span 6;
-    background-color: lawngreen;
+.l3-image {
+    grid-column: 10 / span 6;
+    grid-row: 34 / span 7;
+    background-size: cover;
+    background-image: url('images/tuscany-grape-field-nature-51947.jpeg');
 }
 
-.grid-item-13 {
-    grid-column: 1 / span 14;
-    grid-row: 38 / span 4;
-    background-color: paleturquoise;
+.amenities-head {
+    grid-column: 1 / span 16;
+    grid-row: 42 / span 4;
+    text-align: center;
+    background-color: #474E5D;
 }
 
-.grid-item-14 {
-    grid-column: 2 / span 4;
-    grid-row: 43 / span 8;
-    background-color: mediumturquoise;
+.amenities-img-1 {
+    grid-column: 3 / span 4;
+    grid-row: 47 / span 8;
+    background-size: cover;
+    background-image: url('images/3b-348x348.jpg');
 }
 
-.grid-item-15 {
-    grid-column: 6 / span 4;
-    grid-row: 43 / span 8;
-    background-color: mediumslateblue;
+.amenities-text-1 {
+    grid-column: 7 / span 4;
+    grid-row: 47 / span 8;
+    color: #474E5D;
 }
 
-.grid-item-16 {
-    grid-column: 10 / span 4;
-    grid-row: 43 / span 8;
-    background-color: mediumturquoise;
+.amenities-img-2 {
+    grid-column: 11 / span 4;
+    grid-row: 47 / span 8;
+    background-size: cover;
+    background-image: url('images/42-348x348.jpg');
 }
 
-.grid-item-17 {
-    grid-column: 2 / span 4;
-    grid-row: 51 / span 8;
-    background-color: mediumslateblue;
+.amenities-text-2 {
+    grid-column: 3 / span 4;
+    grid-row: 55 / span 8;
+    color: #474E5D;
 }
 
-.grid-item-18 {
-    grid-column: 6 / span 4;
-    grid-row: 51 / span 8;
-    background-color: mediumturquoise;
+.amenities-img-3 {
+    grid-column: 7 / span 4;
+    grid-row: 55 / span 8;
+    background-size: cover;
+    background-image: url('images/314-348x348.jpg');
 }
 
-.grid-item-19 {
-    grid-column: 10 / span 4;
-    grid-row: 51 / span 8;
-    background-color: mediumslateblue;
+.amenities-text-3 {
+    grid-column: 11 / span 4;
+    grid-row: 55 / span 8;
+    color: #474E5D;
 }
 
-.grid-item-20 {
-    grid-column: 2 / span 4;
-    grid-row: 59 / span 8;
-    background-color: mediumturquoise;
+.amenities-img-4 {
+    grid-column: 3 / span 4;
+    grid-row: 63 / span 8;
+    background-size: cover;
+    background-image: url('images/Villa-Rucellai-Toscani-2812-2-348x348.jpg');
 }
 
-.grid-item-21 {
-    grid-column: 6 / span 4;
-    grid-row: 59 / span 8;
-    background-color: mediumslateblue;
+.amenities-text-4 {
+    grid-column: 7 / span 4;
+    grid-row: 63 / span 8;
+    color: #474E5D;
 }
 
-.grid-item-22 {
-    grid-column: 10 / span 4;
-    grid-row: 59 / span 8;
-    background-color: mediumturquoise;
+.amenities-img-5 {
+    grid-column: 11 / span 4;
+    grid-row: 63 / span 8;
+    background-size: cover;
+    background-image: url('images/Villa-Vanna-231-348x348.jpg');
 }
 
-.grid-item-23 {
-    grid-column: 1 / span 14;
-    grid-row: 68 / span 4;
-    background-color: paleturquoise;
+.reviews-head {
+    grid-column: 1 / span 16;
+    grid-row: 72 / span 4;
+    text-align: center;
+    background-color: #474E5D;
 }
 
-.grid-item-24 {
-    grid-column: 1 / span 14;
-    grid-row: 73 / span 4;
-    background-color: white;
+.carousel {
+    grid-column: 1 / span 16;
+    grid-row: 77 / span 4;
+    color: #474E5D;
 }
 
-.grid-item-25 {
-    grid-column: 1 / span 14;
-    grid-row: 78 / span 4;
-    background-color: paleturquoise;
+.contact-head {
+    grid-column: 1 / span 16;
+    grid-row: 82 / span 4;
+    text-align: center;
+    background-color: #474E5D;
 }
 
-.grid-item-26 {
-    grid-column: 2 / span 5;
-    grid-row: 83 / span 8;
-    background-color: orchid;
+.contact-info {
+    grid-column: 2 / span 6;
+    grid-row: 87 / span 8;
+    color: #474E5D;
 }
 
-.grid-item-27 {
-    grid-column: 7 / span 7;
-    grid-row: 83 / span 8;
-    background-color: mediumorchid;
+.contact-box {
+    grid-column: 8 / span 8;
+    grid-row: 87 / span 8;
+    color: #474E5D;
 }
 
-.grid-item-28 {
-    grid-column: 1 / span 14;
-    grid-row: 92 / span 4;
-    background-color: paleturquoise;
+.footer {
+    grid-column: 1 / span 16;
+    grid-row: 96 / span 4;
+    text-align: center;
+    background-color: #474E5D;
 }
