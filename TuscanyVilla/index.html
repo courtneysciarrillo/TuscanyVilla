@@ -3,14 +3,25 @@
 <head>
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+
     <link href="style.css" rel="stylesheet" />
     <title>Tuscany Villa</title>
 </head>
 <body>
     <div class="container">
 
-        <section class="header logo"> Logo </section>
-        <section class="header nav"> Nav </section>
+        <section class="header logo"> <h5>Logo</h5> </section>
+        <section class="header nav">
+        <nav>
+            <ul>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Amenities</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </section>
 
         <section class="main main-img-1">
             <h1>Tuscany Villa</h1>
@@ -27,6 +38,7 @@
         <section class="locations l1-text">
             <h4>Location #1</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat porta tellus, volutpat rhoncus leo feugiat vel. Curabitur felis ipsum, ultricies in lobortis quis, scelerisque vel elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas luctus nisi nec augue molestie vulputate. Maecenas hendrerit massa eu placerat commodo.</p>
+            <button class="button">Button</button>
         </section>
 
         <section class="locations l1-image"></section>
@@ -38,11 +50,13 @@
         <section class="locations l2-text">
             <h4>Location #2</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat porta tellus, volutpat rhoncus leo feugiat vel. Curabitur felis ipsum, ultricies in lobortis quis, scelerisque vel elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas luctus nisi nec augue molestie vulputate. Maecenas hendrerit massa eu placerat commodo.</p>
+            <button class="button">Button</button>
         </section>
 
         <section class="locations l3-text">
             <h4>Location #3</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat porta tellus, volutpat rhoncus leo feugiat vel. Curabitur felis ipsum, ultricies in lobortis quis, scelerisque vel elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas luctus nisi nec augue molestie vulputate. Maecenas hendrerit massa eu placerat commodo.</p>
+            <button class="button">Button</button>
         </section>
 
         <section class="locations l3-image"> </section>
@@ -58,7 +72,8 @@
 
         <section class="amenities amenities-text-1">
             <h3>A Villa for Every Occasion</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat porta tellus, volutpat rhoncus leo feugiat vel. Curabitur felis ipsum, ultricies in lobortis quis, scelerisque vel elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat tortor in nibh efficitur, et molestie ante aliquet. Donec luctus suscipit lorem, efficitur ornare ex varius id.</p>
+            <button class="button">Button</button>
         </section>
 
         <section class="amenities amenities-img-2">
@@ -67,7 +82,8 @@
 
         <section class="amenities amenities-text-2">
             <h3>What Sets Us Apart</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat porta tellus, volutpat rhoncus leo feugiat vel. Curabitur felis ipsum, ultricies in lobortis quis, scelerisque vel elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat tortor in nibh efficitur, et molestie ante aliquet. Donec luctus suscipit lorem, efficitur ornare ex varius id.</p>
+            <button class="button">Button</button>
         </section>
 
         <section class="amenities amenities-img-3">
@@ -76,7 +92,8 @@
 
         <section class="amenities amenities-text-3">
             <h3>Talk to Staff</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat porta tellus, volutpat rhoncus leo feugiat vel. Curabitur felis ipsum, ultricies in lobortis quis, scelerisque vel elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat tortor in nibh efficitur, et molestie ante aliquet. Donec luctus suscipit lorem, efficitur ornare ex varius id.</p>
+            <button class="button">Button</button>
         </section>
 
         <section class="amenities amenities-img-4">
@@ -85,7 +102,8 @@
 
         <section class="amenities amenities-text-4">
             <h3>Book Your Villa</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat porta tellus, volutpat rhoncus leo feugiat vel. Curabitur felis ipsum, ultricies in lobortis quis, scelerisque vel elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat tortor in nibh efficitur, et molestie ante aliquet. Donec luctus suscipit lorem, efficitur ornare ex varius id.</p>
+            <button class="button">Button</button>
         </section>
 
         <section class="amenities amenities-img-5">
@@ -94,21 +112,65 @@
 
         <section class="reviews reviews-head">
             <h2>Reviews</h2>
-            <h5>What Our Customers Say</h5>
+            <h5>What our customers say</h5>
         </section>
 
-        <section class="reviews carousel"> Carousel Goes Here </section>
+        <section class="reviews carousel">
+            <div class="carousel">
+                <ul class="slides">
+                    <input type="radio" name="radio-btn" id="img-1" checked />
+                    <li class="slide-container">
+                        <div class="slide">
+                            Slide 1
+                        </div>
+                        <div class="nav">
+                            <label for="img-3" class="prev"> &lsaquo; </label>
+                            <label for="img-2" class="next"> &rsaquo; </label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img-2" />
+                    <li class="slide-container">
+                        <div class="slide">
+                            Slide 2
+                        </div>
+                        <div class="nav">
+                            <label for="img-1" class="prev"> &lsaquo; </label>
+                            <label for="img-3" class="next"> &rsaquo; </label>
+                        </div>
+                    </li>
+
+                    <input type="radio" name="radio-btn" id="img-3" />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <p class="quote">"I love it! I love it! I love it!"</p>
+                            Stella, Avid Napper
+                        </div>
+                        <div class="nav">
+                            <label for="img-2" class="prev"> &lsaquo; </label>
+                            <label for="img-1" class="next"> &rsaquo; </label>
+                        </div>
+                    </li>
+
+                    <li class="nav-dots">
+                        <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                        <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                        <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
         <section class="contact contact-head">
             <h2>Contact</h2>
-            <h5>We've Got the Answers</h5>
+            <h5>We've got the answers</h5>
         </section>
 
         <section class="contact contact-info">
             <p>Contact us and we'll get back to you within 24 hours.</p>
-            <p>Cleveland, OH</p>
-            <p>555-555-1212</p>
-            <p>name@email.com</p>
+            <p><i class="fas fa-map-marker-alt"> </i> Cleveland, OH</p>
+            <p><i class="fas fa-mobile-alt"> </i> 555-555-1212</p>
+            <p><i class="fas fa-envelope"> </i> name@email.com</p>
         </section>
 
         <section class="contact contact-box"> Contact Box Goes Here </section>
