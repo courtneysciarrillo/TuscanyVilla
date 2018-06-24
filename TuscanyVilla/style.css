@@ -125,6 +125,13 @@ p {
     line-height: 1.1;
 }
 
+.l1-text, .l2-text, .l3-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .l1-text {
     grid-column: 2 / span 7;
     grid-row: 16 / span 7;
@@ -329,6 +336,28 @@ p {
 }
 
 
+/* button styling */
+
+.l2-text .button {
+    background-color: white;
+    color: #474E5D;
+}
+
+.button {
+    background-color: #474E5D;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+/* end button styling */
 
 
 
