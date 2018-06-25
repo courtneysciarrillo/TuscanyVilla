@@ -2,25 +2,25 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 
     <link href="style.css" rel="stylesheet" />
     <title>Tuscany Villa</title>
 </head>
 <body>
+    <a name="top"></a>
     <div class="container">
-
         <section class="header logo"> <h5>Logo</h5> </section>
         <section class="header nav">
-        <nav>
-            <ul>
-                <li><a href="#">Locations</a></li>
-                <li><a href="#">Amenities</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </section>
 
         <section class="main main-img-1">
@@ -29,9 +29,9 @@
         </section>
 
         <section class="main main-img-2"></section>
-
+        
         <section class="locations locations-head">
-            <h2>Locations</h2>
+            <a name="locations"><h2>Locations</h2></a>
             <h5>Some places for you to go</h5>
         </section>
 
@@ -62,7 +62,7 @@
         <section class="locations l3-image"> </section>
 
         <section class="amenities amenities-head">
-            <h2>Amenities</h2>
+            <a name="amenities"><h2>Amenities</h2></a>
             <h5>Some stuff for you to enjoy</h5>
         </section>
 
@@ -111,7 +111,7 @@
         </section>
 
         <section class="reviews reviews-head">
-            <h2>Reviews</h2>
+            <a name="reviews"><h2>Reviews</h2></a>
             <h5>What our customers say</h5>
         </section>
 
@@ -121,22 +121,24 @@
                     <input type="radio" name="radio-btn" id="img-1" checked />
                     <li class="slide-container">
                         <div class="slide">
-                            Slide 1
+                            <p class="quote">"I love it! I love it! I love it!"</p>
+                            Stella, Avid Napper
                         </div>
                         <div class="nav">
-                            <label for="img-3" class="prev"> &lsaquo; </label>
-                            <label for="img-2" class="next"> &rsaquo; </label>
+                            <label for="img-3" class="prev"> <i class="left"></i> </label>
+                            <label for="img-2" class="next"> <i class="right"></i> </label>
                         </div>
                     </li>
 
                     <input type="radio" name="radio-btn" id="img-2" />
                     <li class="slide-container">
                         <div class="slide">
-                            Slide 2
+                            <p class="quote">"I love it! I love it! I love it!"</p>
+                            Stella, Avid Napper
                         </div>
                         <div class="nav">
-                            <label for="img-1" class="prev"> &lsaquo; </label>
-                            <label for="img-3" class="next"> &rsaquo; </label>
+                            <label for="img-1" class="prev"> <i class="left"></i> </label>
+                            <label for="img-3" class="next"> <i class="right"></i> </label>
                         </div>
                     </li>
 
@@ -147,8 +149,8 @@
                             Stella, Avid Napper
                         </div>
                         <div class="nav">
-                            <label for="img-2" class="prev"> &lsaquo; </label>
-                            <label for="img-1" class="next"> &rsaquo; </label>
+                            <label for="img-2" class="prev"> <i class="left"></i> </label>
+                            <label for="img-1" class="next"> <i class="right"></i> </label>
                         </div>
                     </li>
 
@@ -162,7 +164,7 @@
         </section>
 
         <section class="contact contact-head">
-            <h2>Contact</h2>
+            <a name="contact"><h2>Contact</h2></a>
             <h5>We've got the answers</h5>
         </section>
 
@@ -173,11 +175,21 @@
             <p><i class="fas fa-envelope"> </i> name@email.com</p>
         </section>
 
-        <section class="contact contact-box"> Contact Box Goes Here </section>
+        <section class="contact contact-box">
+            <form action="/action_page.php">
+                <div class="cust-contact">
+                    <input type="text" id="name" name="custName" placeholder="Name">
+                    <input type="text" id="email" name="custEmail" placeholder="Email">
+                </div>
+                <textarea id="comment" name="custComment" placeholder="Comment"></textarea>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </section>
 
         <section class="footer">
-            <p>Created by: Courtney Sciarrillo</p>
-            <p>Not at all copyrighted</p>
+            <a href="#top"><i class="up"></i></a>
+            <p class="name">Created by: Courtney Sciarrillo</p>
+            <p class="copyright">Not at all copyrighted</p>
         </section>
 
     </div>
